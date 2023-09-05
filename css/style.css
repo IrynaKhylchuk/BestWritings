@@ -80,7 +80,7 @@ p.text {
 
 /* ------------------ HEADER ----------------------- */
 
-header .bg_main_2 {
+.bg_main_2 {
     background-color: var(--color_main_2);
     background-image: url(../images/Bg1.svg);
     height: 57px;
@@ -88,7 +88,7 @@ header .bg_main_2 {
 
 header span, header a {
     font-size: 20px;
-    color: #3f6584;
+    color: #caddea;
     font-weight: 250;
     font-family: "Roboto-Thin";
     line-height: 57px;
@@ -125,25 +125,99 @@ header a img{
 
 header .bg_main_1 {
     background-color: var(--color_main_1);
-    height: 50px;
+    height: 40px;
 }
 
 .bg_main_1 {
     color: #caddea;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.bg_main_1 .col{
+.bg_main_1 .col a{
     text-align: center;
     font-family: Roboto-Regular;
     font-size: 20px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .bg_main_1 a:hover {
     background-color: #caddea;
     color: var(--color_main_1);
-    padding: auto;
+}
+
+.bg-header {
+    padding: 0;
+    background-image: url(../images/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 585px;
+    overflow: hidden;
+    box-shadow: inset 0 5px 5px -5px #333;
+}
+
+.banner-text {
+    padding: 30px 0;
+}
+
+.h1-div {
+    background-color: #caddea;
+    box-shadow: 0 1px 5px 1px #b3c8d0;
+    text-align: center;
+}
+
+.h1-div h1 {
+    padding: 15px;
+}
+
+.header-list h3 {
+    padding: 0 40px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.header-list ul {
+    margin-top: 0;
+    list-style: none;
+}
+
+.header-list ul li::before {
+    content: "\2022";
+    color: #1b7fd0;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.header-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color_p_text);
+}
+
+.header-btn {
+    padding: 0 50px;
+}
+
+.header-btn button {
+    width: 230px;
+    height: 35px;
+    font-family: Roboto-Regular;
+    color: #1b7fd0;
+    border: 1px solid #1b7fd0;
+    font-size: 18px;
+    background: none;
+    margin: 7px;
+}
+
+.header-btn button:hover {
+    background-color: #1b7fd0;
+    color: #caddea;
 }
