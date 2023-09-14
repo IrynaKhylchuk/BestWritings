@@ -112,15 +112,49 @@ header a img{
     vertical-align: middle;
 }
 
-.login {
+.login-live {
     display: flex;
     justify-content: flex-end;
 }
 
-.login a {
+.login-live a {
     display: inline-block;
     text-transform: uppercase;
     padding: 0 20px;
+}
+
+.login-live a:hover {
+    color: #1b7fd0;
+}
+
+.login::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/Login.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+}
+
+.live::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/Chat.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+}
+
+.login:hover::after {
+    background-image: url(../images/Login2.svg);
+}
+
+.live:hover::after {
+    background-image: url(../images/Chat2.svg);
 }
 
 header .bg_main_1 {
@@ -138,7 +172,6 @@ header .bg_main_1 {
     font-family: Roboto-Regular;
     font-size: 20px;
     height: 40px;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,6 +181,24 @@ header .bg_main_1 {
 .bg_main_1 a:hover {
     background-color: #caddea;
     color: var(--color_main_1);
+}
+
+.border-li::after {
+    content: "";
+    border: 2px solid white;
+    border-radius: 3px;
+    height: 15px;
+    position: relative;
+    top: -30px;
+}
+
+div.col {
+    padding: 0;
+}
+
+.border-li {
+    height: 40px;
+    padding: 0;
 }
 
 .bg-header {
@@ -167,8 +218,19 @@ header .bg_main_1 {
 
 .h1-div {
     background-color: #caddea;
-    box-shadow: 0 1px 5px 1px #b3c8d0;
     text-align: center;
+    filter: drop-shadow(0 1px 5px 1px #b3c8d0);
+}
+
+.h1-div::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid #caddea;
+    border-right: 40px solid transparent;
+    position: relative;
+    top: 148px;
+    right: 316px;
 }
 
 .h1-div h1 {
@@ -177,7 +239,7 @@ header .bg_main_1 {
 
 .header-list h3 {
     padding: 0 40px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-weight: 100;
 }
 
@@ -220,4 +282,87 @@ header .bg_main_1 {
 .header-btn button:hover {
     background-color: #1b7fd0;
     color: #caddea;
+    cursor: pointer;
+}
+
+/* --------------SECTION---------------- */
+
+.section-bg {
+    height: 290px;
+    background-color: #075da2;
+    background-image: url(../images/Bg1-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-1 {
+    background-color: #caddea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-shadow:  0 5px 5px -5px #333;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.bg-1 p {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Roboto-Regular;
+    font-size: 22px;
+    color: #075da2;
+}
+
+.bg-1 p span {
+    color: #dd0000;
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+.bg-1 p span:first-child {
+    font-family: Roboto-Bold;
+    font-size: 50px;
+}
+
+.bg-1 p::before {
+    content: "";
+    background-image: url(../images/Arrow.svg);
+    height: 50px;
+    width: 22px;
+    position: relative;
+    right: 10px;
+}
+
+label {
+    font-size: 16px;
+    color: #caddea;
+    text-transform: uppercase;
+    font-family: Roboto-Regular;
+    margin: 10px;
+}
+
+select {
+    width: 290px;
+    height: 30px;
+    margin: 10px;
+}
+
+.price {
+    color: white;
+    font-family: Roboto-Regular;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.price span:last-child {
+    font-size: 20px;
+}
+
+.number {
+    font-size: 30px;
 }
