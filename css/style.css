@@ -737,6 +737,7 @@ select {
     background-repeat: no-repeat;
     padding: 50px 0;
 }
+
 .h2-div-block {
     text-align: center;
     background-color: #caddea;
@@ -754,7 +755,6 @@ select {
     top: 53px;
     left: 0px;
 }
-
 
 .h2-div-block h2 {
     margin: 0;
@@ -810,6 +810,19 @@ select {
     border-left: 30px solid #075da2;
     border-bottom: 32px solid transparent;
     right: -30px;
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .list-block ul li:nth-child(4):hover::before {
+        border-top: 41px solid transparent;
+        border-left: 30px solid #075da2;
+        border-bottom: 41px solid transparent;
+    }
+
+    .items-block {
+        margin-bottom: 150px;
+    }
 }
 
 .list-block {
@@ -890,16 +903,12 @@ select {
     display: block;
 }
 
-.img-block-4 p {
-    font-size: 17px;
-}
 
 .info-block {
     padding: 0;
     height: 385px;
     margin-top: 15px;
 }
-
 
 /* ---------------PAYMENT--------------- */
 
@@ -1070,6 +1079,7 @@ select {
         color: #013056;
     }
 }
+
 @media screen and (min-width:992px) and (max-width:1200px) {
     .footer div:last-child {
         display: none;
